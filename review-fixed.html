@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus - STT Cipasung</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #333333;
+            background-color: #f4f6f8;
+            margin: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 16px;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #003366;
+            color: #ffffff;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin-top: 0;
+        }
+
+        .nav-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #ffdd99;
+            text-decoration: underline;
+        }
+
+        nav a:focus-visible {
+            outline: 2px solid #ffffff;
+            outline-offset: 4px;
+        }
+
+        section {
+            background-color: #ffffff;
+            padding: 16px;
+            margin-bottom: 24px;
+            border: 1px solid #cccccc;
+            border-radius: 8px;
+        }
+
+        section img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        label,
+        input,
+        button {
+            font: inherit;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid #999999;
+            border-radius: 4px;
+        }
+
+        input:focus {
+            outline: 2px solid #336699;
+            outline-offset: 1px;
+        }
+
+        .button {
+            background-color: #003366;
+            color: #ffffff;
+            padding: 10px 18px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #164f85;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.875rem;
+            color: #555555;
+            padding: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>STT Cipasung</h1>
+
+            <nav aria-label="Navigasi utama">
+                <ul class="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#programs">Programs</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container" id="home">
+        <section aria-labelledby="about-heading">
+            <h2 id="about-heading">About Us</h2>
+
+            <p>
+                STT Cipasung is a technology college in Tasikmalaya.
+            </p>
+
+            <img
+                src="https://placehold.co/600x300?text=STT+Cipasung"
+                alt="Ilustrasi kampus STT Cipasung"
+                width="600"
+                height="300"
+            >
+        </section>
+
+        <section id="programs" aria-labelledby="programs-heading">
+            <h2 id="programs-heading">Programs</h2>
+
+            <p>
+                Explore academic programs and learning opportunities
+                at STT Cipasung.
+            </p>
+        </section>
+
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact Us</h2>
+
+            <form action="#" method="get">
+                <label for="name">Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    autocomplete="name"
+                    required
+                >
+
+                <label for="email">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    autocomplete="email"
+                    required
+                >
+
+                <button class="button" type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 STT Cipasung</p>
+    </footer>
+</body>
+</html>

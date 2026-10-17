@@ -59,68 +59,8 @@ Margin: kiri dan kanan 19.920 px, atas dan bawah 0 px
 | 7 | Atribut `href` pada link About tidak memiliki tanda kutip penutup | Diubah menjadi `href="about.html"` | Validator HTML dan membaca kode |
 | 8 | Selector `#news-list` tidak cocok dengan ID `newsList` | Selector diubah menjadi `#newsList` | Membandingkan selector CSS dengan ID HTML |
 | 9 | Gambar tidak memiliki atribut `alt` | Ditambahkan `alt="Campus news banner"` | Validator HTML dan pemeriksaan aksesibilitas |
-## Bagian 5 — Debugging
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Campus News</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            color: #333;
-        }
 
-        header {
-            background: #dbe7f3;
-            padding: 20px;
-        }
-
-        .card {
-            border: 1px solid #ccc;
-            padding: 16px;
-        }
-
-        #newsList {
-            font-size: 18px;
-        }
-
-        footer {
-            text-align: center;
-        }
-    </style>
-</head>
-
-<body>
-    <header>
-        <h1>Campus News</h1>
-
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-        </nav>
-    </header>
-
-    <main>
-        <section class="card">
-            <img
-                src="https://placehold.co/600x200?text=News"
-                alt="Campus news banner"
-            >
-
-            <ul id="newsList">
-                <li>New library books have arrived</li>
-                <li>Coding Day registration is open</li>
-            </ul>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 STT Cipasung</p>
-    </footer>
-</body>
-</html>
 
 ## Bagian 6: Tabel Code Review
 | # | Baris | Masalah | Mengapa penting | Perbaikan saya |
